@@ -1445,6 +1445,10 @@ form .password-section i{
     margin-bottom: 100px;
 }
 
+.wishlist-section-btns {
+    padding: 15px 35px;
+}
+
 .wishlist-products .card {
     display: inline;
     width: 250px;
@@ -1555,18 +1559,21 @@ form .password-section i{
     
 }
 
-.cart-section input[type=number]{
-    width:50px;
-    text-align: center;
-    
-}
-
 
 .cart-section .btns {
     display: flex;
     justify-content: space-between;
 }
+
+.cart-section-btns {
+    padding: 10px 20px;
+
+}
+
 .cart-section .coupon-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
     margin: 40px 0;
 
 }
@@ -1814,12 +1821,35 @@ form .password-section i{
     
 }
 
+.form-section .user-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media only screen and (max-width:576px) {
+    .form-section .user-inputs {
+        flex-direction: column;
+    }
+
+    .contact-method2 {
+        margin-bottom: 50px;
+    }
+
+}
+
 .form-section input[type='text'] ,.form-section input[type='email'] ,.form-section textarea {
     padding: 10px 15px;
     background-color: #a0bce041;
     border-radius: 6px;
     border: none;
     caret-color: var(--btnColor);
+    
+}
+.form-section input[type='text']::placeholder ,.form-section input[type='email']::placeholder ,.form-section textarea::placeholder {
+    color: #008e9381;
+    
 }
 .form-section input:focus , textarea:focus {
     outline: 1px dashed var(--btnColor);
@@ -2343,7 +2373,7 @@ iframe {
     /* cart section */
     .cart-section .coupon-row input[type=text] {
         padding: 10px 10px;
-        width: 180px;
+        width: 160px;
     }
     
     .cart-section .coupon-btn {
@@ -2570,7 +2600,15 @@ iframe {
 }
 @media only screen and (max-width:576px) {
 
+    .header{
+        margin-top: 40px;        
+        
+    }
 
+    .sub{
+        padding-left: 10px;
+        
+    }
         
     .signup-section .col-lg-4 {
         width: 80%;
@@ -2578,16 +2616,18 @@ iframe {
 
         /* Wishlist Section */
 
+        .wishlist-section-btns {
+            padding: 10px 20px;
+        }
+
          .wishlist-products {
-            /* overflow: hidden; */
-            width: 100%;
             display: grid;
-            grid-template-columns: auto;
+            grid-template-columns: 100%;
             margin-bottom: 100px;
         }
 
         .wishlist-products .card {
-            width: 100vw;
+            width: 100%;
 
         }
     
