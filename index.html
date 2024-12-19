@@ -39,15 +39,15 @@
 
 <!-- Preloader -->
 
-<div class="splash ">
-    <img class="fadein" src="images/exclusive_splash_logo.png" alt="" width="200px">
+<div class="splash">
+    <img class="fadein" src="images/exclusive_splash_logo.png" alt="Exclusive Splash Logo" width="200px">
     <l-infinity
         size="55"
         stroke="4"
         stroke-length="0.15"
         bg-opacity="0.20"
         speed="1.3"
-        color="#4834d4" 
+        color="#4834d4"
     ></l-infinity>
 </div>
 
@@ -57,7 +57,7 @@
 
 <button class="topBtn" onclick="topFunction()">
     <span class="material-symbols-outlined">
-    keyboard_arrow_up
+        keyboard_arrow_up
     </span>
 </button>
 
@@ -69,15 +69,15 @@
 <header class="top-area">
     <div class="container-xl top-section">
         <div class="text">
-            <span>Winter Sale And Free Express Delivery With Up To - 50% OFF!</span>
-            <a id="shop-btn" href="#">ShopNow</a>
+            <span>New Year Sale And Free Express Delivery With Up To - 50% OFF!</span>
+            <a id="shop-btn" href="#" style="color: cyan;">Shop Now</a>
         </div>
-        <div class="lang-btn">       
-            <select name="" id="lang">
-                <option value="">English</option>
-                <option value="">French</option>
-                <option value="">Spanish</option>
-                <option value="">Bangla</option>
+        <div class="lang-btn">
+            <select name="language" id="lang">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="bn">Bangla</option>
             </select>
         </div>
     </div>
@@ -99,7 +99,7 @@
                 
             <form class="search-bar2" action="" >
                 <input class="" type="text" placeholder="Search...">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
                 
             <a class="navigation-icon" data-bs-toggle="offcanvas" href="#myOffcanvas">
@@ -119,14 +119,14 @@
 
         <form class="search-bar" action="" >
             <input class="Search" type="text" placeholder="what are you looking for?">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
         <!-- Navigation Buttons  -->
         <div class="btns">
             <!-- Toggle button -->
             <label class="switch" >
-                <input type="checkbox" onclick="myFunction()">
+                <input type="checkbox" onclick="toggleTheme()">
                 <span class="slider" ></span>
             </label>
             <span class="wishlist-btn">
@@ -164,12 +164,14 @@
  
 <div id="myOffcanvas" class="offcanvas offcanvas-end offcanvas-lg">
     <div class="offcanvas-header">
-        <h1 class="offcanvas-title brand-logo">Exclusive</h1>
+        <a href="index.html" class="navbar-brand">
+            <span class="brand-logo"><span class="stylish-E">E</span>xclusive</span>
+        </a>
             <button class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
@@ -336,7 +338,7 @@
        
        
  
-        <div class="col-2 indicators">
+        <div class="col-2 indicators text-dark">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
        </div>

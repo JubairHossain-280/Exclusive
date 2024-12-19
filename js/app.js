@@ -56,14 +56,51 @@ function topFunction() {
 
 //* Toggle Theme
 
-function myFunction() {
+function toggleTheme() {
     const body = document.body;
-    body.classList.toggle('dark-mode');
-    const brandLogo = document.querySelector('.brand-logo');
-    brandLogo.classList.toggle('dark-mode2');
-    const productName = document.querySelectorAll('.product-name');
-    productName.classList.toggle('dark-mode2');
-    
+    body.classList.toggle('night-mode');
+    const brandLogos = document.querySelectorAll('.brand-logo');
+    brandLogos.forEach(brandLogo => brandLogo.classList.toggle('dark-mode2'));
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.classList.toggle('.light-border');
+    const searchBarInput = document.querySelector('.search-bar input');
+    searchBarInput.classList.toggle('dark-mode2');
+    const searchBarIcon = document.querySelector('.search-bar button');
+    searchBarIcon.classList.toggle('dark-mode2');
+    const searchBar2 = document.querySelector('.search-bar2');
+    searchBar2.classList.toggle('.light-border');
+    const searchBarInput2 = document.querySelector('.search-bar2 input');
+    searchBarInput2.classList.toggle('dark-mode2');
+    const searchBarIcon2 = document.querySelector('.search-bar2 button');
+    searchBarIcon2.classList.toggle('dark-mode2');
+    const navigationIcon = document.querySelector('.navigation-icon');
+    navigationIcon.classList.toggle('dark-mode2');
+    const navIcon = document.querySelectorAll('.nav-icon');
+    navIcon.forEach(navIcon => navIcon.classList.toggle('dark-mode2'));
+    const productNames = document.querySelectorAll('.product-name');
+    productNames.forEach(product => product.classList.toggle('dark-mode2'));
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(navLink => navLink.classList.toggle('dark-mode2'));
+    const offcanvas = document.querySelector('.offcanvas');
+    offcanvas.classList.toggle('dark-mode');
+    const collectionLinks = document.querySelectorAll('.collection-link');
+    collectionLinks.forEach(collectionLink => collectionLink.classList.toggle('dark-mode2'));
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(dropdown => dropdown.classList.toggle('dark-mode'));
+    const dropdownItems = document.querySelectorAll(' .collection .dropdown-item');
+    dropdownItems.forEach(dropdownItem => dropdownItem.classList.toggle('dark-mode'));
+    const sliderArrows = document.querySelectorAll('.swiper-button-next, .swiper-button-prev');
+    sliderArrows.forEach(sliderArrow => sliderArrow.classList.toggle('dark-mode2'));
+    const cardTexts = document.querySelectorAll('.card-title, .card-text');
+    cardTexts.forEach(cardText => cardText.classList.toggle('dark-mode2'));
+    const categories = document.querySelectorAll('.category-slider span');
+    categories.forEach(category => category.classList.toggle('dark-mode2'));
+    const categoriesName = document.querySelectorAll('.category-slider p');
+    categoriesName.forEach(categoryName => categoryName.classList.toggle('dark-mode2'));
+    const cardBorders = document.querySelectorAll('.card');
+    cardBorders.forEach(cardBorder => cardBorder.classList.toggle('light-border'));
+    const socialLinks = document.querySelectorAll('.social-links i');
+    socialLinks.forEach(socialLink => socialLink.classList.toggle('dark-mode2'));
 }
 
 //* Toggle Theme
