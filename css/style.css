@@ -1347,16 +1347,20 @@ ul#down-timer {
     display:block;
     width:100%;
     border: none;
+    border-radius: 5px;
     border-bottom: 1px solid gray;
     padding: 10px 0;
     margin: 25px 0;
+    background: transparent;
+    caret-color: var(--btnColor);
 }
 .signup-section .signup-box input[type='password'] {
     display:block;
     width:100%;
     border: none;
     padding: 10px 0;
-    /* margin: 25px 0; */
+    background: transparent;
+    caret-color: var(--btnColor);
 }
 
 .signup-section .signup-box input:focus{
@@ -1365,7 +1369,6 @@ ul#down-timer {
 
 form .password-section {
     border-bottom: 1px solid gray;
-    background-color: white;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1376,7 +1379,7 @@ form .password-section {
 form .password-section i{
     padding: 0 3px;
     font-size: 20px;
-    /* display: none; */
+    cursor: pointer;
 }
 
 
@@ -1393,8 +1396,12 @@ form .password-section i{
     font-weight: 600;
     
 }
+.signup-section .signup-box .create-btn:hover {
+    background-color: #a12727;
+    
+}
 .signup-section .signup-box .google-btn {
-    color: var(--darkColor);
+    width: 100%;
     border: 1px solid gray;
     border-radius: 4px;
     padding :4px 0;
@@ -1402,6 +1409,10 @@ form .password-section i{
     text-align: center;
     font-weight: 600;
     margin-bottom: 30px;
+    background: transparent;
+}
+.signup-section .signup-box .google-btn:hover {
+    background-color: #a0bce041;
 }
  
 .signup-section .signup-box .google-btn img{
@@ -1416,7 +1427,6 @@ form .password-section i{
     
 }
 .signup-section .signup-box .signup-link a{
-    color: var(--darkColor);
     margin-left:10px;
     text-decoration: underline;
     

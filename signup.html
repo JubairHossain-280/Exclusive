@@ -96,10 +96,10 @@
             
         <div id="nav-items"  class="">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="signup.html" class="nav-link active">Sign Up</a></li>
             </ul>
         </div>
 
@@ -180,14 +180,14 @@
                     <h2>Create an account</h2>
                     <h6>Enter your details below</h6>
                     <form action="">
-                        <input class="form-control" type="text" placeholder="Name" required>
-                        <input class="form-control" type="email" placeholder="Email or Phone Number" required>
-                        <div class="password-section" onfocus="inputFocus(this)">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email or Phone Number" required>
+                        <div class="password-section">
                             <input class="" type="password" id="pwd" placeholder="Password..." required >
                             <i class="fa-solid fa-eye-slash" id="chk" onmousedown="passToggle()"></i>
                         </div> 
-                        <button type="submit" class="create-btn" href="">Create Account</button>
-                        <a class="google-btn" href=""><img src="icons/google-icon.svg" alt=""> Sign up with Google</a>
+                        <button type="submit" class="create-btn">Create Account</button>
+                        <button class="google-btn"><img src="icons/google-icon.svg" alt="Google_icon"> Sign up with Google</button>
                         <div class="signup-link">
                             <span>Already have account?</span>
                             <a href="">Log in</a>
