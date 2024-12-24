@@ -207,7 +207,24 @@ function decreaseQuantity2() {
 
 //? to update the quantity
 
+//hero slider
 
+var swiper = new Swiper(".hero-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+//hero slider
 
 // Product Slider
 new Swiper('.card-wrapper', {
@@ -366,7 +383,7 @@ $(document).ready(function(){
     // Countdown timer
     // down timer
     $('#down-timer').countdown({
-        date: '12/23/2024 23:59:59'
+        date: '12/31/2024 23:59:59'
     }, function () {
         alert('Merry Christmas!');
     });
@@ -381,6 +398,7 @@ $(document).ready(function(){
     });
     
     //? cookies
+
         
     });
 

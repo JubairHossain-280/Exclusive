@@ -516,6 +516,9 @@ input:checked + .slider:before {
     
 }
 
+#hero-section {
+    /* position: relative; */
+}
 
 #hero-section .dropdown:hover .collection-link{
     color: var(--lightColor);
@@ -541,6 +544,20 @@ input:checked + .slider:before {
     display:grid;
     grid-template-columns: auto auto;
     overflow: hidden;
+    animation: slide 0.3s ease-in-out;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+        z-index: -111;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+        z-index: 111;
+    }
 }
 
 #hero-section .collection .dropdown {
@@ -552,7 +569,7 @@ input:checked + .slider:before {
     margin:0;
     position:absolute;
     top:0;
-    margin-left: 205px;
+    left: 205px;
 }
 
 #hero-section .collection .dropdown i {
@@ -565,48 +582,60 @@ input:checked + .slider:before {
 
 /* hero-section  */
 
-.carousel  {
-    width:100%;
-    height:350px;
+
+/* hero slider */
+.hero-slider {
+    width: 100%;
+    height: 350px;
     margin-top: 32px;
-    /* position:relative; */
-    
-    
-}
+  }
 
-.carousel-item  {
-    width:100%;
-    height:350px;
-    object-fit: contain;
-    
-}
-.carousel-item img {
-    width:100%;
-    height:100%;
+.hero-slider  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.hero-slider .swiper-slide img {
+
+    width: 100%;
+    height: 100%;
     object-fit: 100% 100%;
-    
-}
+    aspect-ratio: 3/2;
+  }
 
-.carousel-indicators button.active {
-    background-color: cyan;
-}
+.hero-slider .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.carousel-control-prev , .carousel-control-next {
-    visibility: hidden;
-}
-.carousel:hover .carousel-control-prev , .carousel:hover .carousel-control-next {
-    visibility: visible;
-}
-
-.carousel-control-prev-icon , 
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.542);
+.hero-slider .swiper-button-next, .hero-slider .swiper-button-prev {
+    color: white;
+    background: rgba(0, 0, 0, 0.591);
+    opacity: 0.3;
     border-radius: 3px;
+    position: absolute;
+    top: 45%;
 
 }
+
+.hero-slider .swiper-button-next:hover, .hero-slider .swiper-button-prev:hover {
+    opacity: 1;
+
+  }
+
+.hero-slider .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: white;
+  }
+
+/* hero slider */
 
 
 /* hero-section  */
+
 
 /* cookies section  */
 
