@@ -105,6 +105,8 @@ function toggleTheme() {
     logIn.classList.toggle('dark-mode2');
     const googleIcon = document.querySelector('.google-btn');
     googleIcon.classList.toggle('dark-mode2');
+    const closeBtn = document.querySelector('.offcanvas-header i');
+    closeBtn.classList.toggle('dark-mode2');
 }
 
 //* Toggle Theme
@@ -372,9 +374,11 @@ $(document).ready(function(){
 
     //? cookies
     
+    const body = document.body;
     const myCookies = document.querySelector('.cookies');
-    $(myCookies).fadeIn('slow');
-    myCookies.style.display = 'flex';
+    $(body).DomContentLoaded(function(){
+        $(myCookies).slideUp(slow);
+    });
     
     //? cookies
         

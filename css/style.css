@@ -424,7 +424,15 @@ input:checked + .slider:before {
 
 /* offcanvas  */
 
-
+.offcanvas-header button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+}
+.offcanvas-header i {
+    font-size: 24px;
+}
 
 .offcanvas .offcanvas-body .collection {
     margin-top: 10px;
@@ -459,7 +467,7 @@ input:checked + .slider:before {
     font-size: 14px;
     float:right;
     line-height: 1.7;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .offcanvas .offcanvas-body .collection .dropdown-item{
