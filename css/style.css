@@ -610,13 +610,20 @@ input:checked + .slider:before {
   }
 
 .hero-slider .swiper-button-next, .hero-slider .swiper-button-prev {
+    visibility: hidden;
     color: white;
     background: rgba(0, 0, 0, 0.591);
     opacity: 0.3;
     border-radius: 3px;
     position: absolute;
     top: 45%;
+    --swiper-navigation-size:24px;    
+    padding: 15px;
 
+}
+
+.hero-slider:hover .swiper-button-next, .hero-slider:hover .swiper-button-prev {
+    visibility: visible;
 }
 
 .hero-slider .swiper-button-next:hover, .hero-slider .swiper-button-prev:hover {

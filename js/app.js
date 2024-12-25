@@ -212,8 +212,8 @@ function decreaseQuantity2() {
 const swiper = new Swiper(".hero-slider", {
     slidesPerView: 1,
     // spaceBetween: 30,
-    time: 10000,
     loop: true,
+    speed : 300,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
