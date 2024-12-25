@@ -209,11 +209,16 @@ function decreaseQuantity2() {
 
 //hero slider
 
-var swiper = new Swiper(".hero-slider", {
+const swiper = new Swiper(".hero-slider", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    // spaceBetween: 30,
+    time: 10000,
     loop: true,
-    autoplay: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
