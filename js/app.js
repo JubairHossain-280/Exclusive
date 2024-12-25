@@ -79,6 +79,8 @@ function toggleTheme() {
     navIcon.forEach(navIcon => navIcon.classList.toggle('dark-mode2'));
     const productNames = document.querySelectorAll('.product-name');
     productNames.forEach(product => product.classList.toggle('dark-mode2'));
+    const productIcons = document.querySelectorAll('.favourite , .visibility');
+    productIcons.forEach(productIcon => productIcon.classList.toggle('dark-mode2'));
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(navLink => navLink.classList.toggle('dark-mode2'));
     const offcanvas = document.querySelector('.offcanvas');
@@ -89,8 +91,6 @@ function toggleTheme() {
     dropdowns.forEach(dropdown => dropdown.classList.toggle('dark-mode'));
     const dropdownItems = document.querySelectorAll(' .collection .dropdown-item');
     dropdownItems.forEach(dropdownItem => dropdownItem.classList.toggle('dark-mode'));
-    const sliderArrows = document.querySelectorAll('.swiper-button-next, .swiper-button-prev');
-    sliderArrows.forEach(sliderArrow => sliderArrow.classList.toggle('dark-mode2'));
     const cardTexts = document.querySelectorAll('.card-title, .card-text');
     cardTexts.forEach(cardText => cardText.classList.toggle('dark-mode2'));
     const categories = document.querySelectorAll('.category-slider span');
@@ -240,7 +240,7 @@ new Swiper('.card-wrapper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      dynamicBullets: true,
+    //   dynamicBullets: true,
     },
   
     // Navigation arrows
@@ -314,7 +314,7 @@ new Swiper('.just-for-you-wrapper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      dynamicBullets: true,
+    //   dynamicBullets: true,
     },
   
     // Navigation arrows
@@ -390,7 +390,7 @@ $(document).ready(function(){
     $('#down-timer').countdown({
         date: '12/31/2024 23:59:59'
     }, function () {
-        alert('Merry Christmas!');
+        alert('Happy New Year!');
     });
     // down timer
 
