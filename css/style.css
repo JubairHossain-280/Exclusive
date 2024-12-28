@@ -494,12 +494,34 @@ input:checked + .slider:before {
 
 /* side-bar  */
 
+#collection {
+    border-right:1px solid gray;
+    padding-top: 30px;
+}
+#collection .categories-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    color: var(--lightColor);
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+}
+#collection .categories-list .categories-title{
+    font-family: "Great-Vibes", cursive;
+    padding: 0;
+    margin: 0;
+    
+}
+
 .collection {
     list-style-type: none;
     margin:0;
     padding:0;
-    border-right:1px solid gray;
-    padding-top: 30px;
+    /* border-right:1px solid gray;
+    padding-top: 30px; */
 }
 
 .collection-name:hover {
@@ -531,7 +553,8 @@ input:checked + .slider:before {
     
 }
 #hero-section .collection .dropdown-item:hover{
-    background-color: rgb(197, 181, 181);
+    background-color: var(--btnColor);
+    color: var(--lightColor);
 
     
 }
@@ -582,7 +605,7 @@ input:checked + .slider:before {
 /* hero slider */
 .hero-slider {
     width: 100%;
-    height: 350px;
+    height: 380px;
     margin-top: 32px;
     cursor: pointer;
   }
