@@ -1,3 +1,21 @@
+//* Translate whole page
+function translatePage() {
+    var lang = document.getElementById("language-select").value;
+    if (lang) {
+        var translateSelect = document.querySelector('.goog-te-combo');
+        if (translateSelect) {
+            translateSelect.value = lang;
+            translateSelect.dispatchEvent(new Event('change'));
+        }
+    }
+}
+
+//? Add "notranslate" class to all the Google icons
+document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+    icon.classList.add('notranslate')
+});
+
+
 //todo Splash Screen
 
 const splash = document.querySelector('.splash');
@@ -396,11 +414,11 @@ $(document).ready(function(){
 
     //? cookies
     
-    const body = document.body;
-    const myCookies = document.querySelector('.cookies');
-    $(body).DomContentLoaded(function(){
-        $(myCookies).slideUp(slow);
-    });
+    // const body = document.body;
+    // const myCookies = document.querySelector('.cookies');
+    // $(body).DomContentLoaded(function(){
+    //     $(myCookies).slideUp(slow);
+    // });
     
     //? cookies
 
