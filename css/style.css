@@ -189,14 +189,12 @@ iframe.goog-te-frame {
 .navigation-icon {
     display: none;
     font-size: 24px;
-    /* color: var(--darkColor); */
     margin : 10px;
 }
 
 
 .nav-icon {
     font-size: 24px;
-    /* color: var(--darkColor); */
     margin-left: 15px;
 }
 .navbar {
@@ -876,7 +874,7 @@ ul#countdown-timer {
 }
 
 .product-slider .card:hover .hover-effect {
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.508);
     z-index: 1111;
     position:absolute;
     width:100%;
