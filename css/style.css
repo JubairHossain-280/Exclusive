@@ -35,7 +35,7 @@ body {
 
 
 .dark-mode {
-    background-color: var(--darkColor);
+    background-color: rgb(21, 32, 43);
     color: white;
   }
 
@@ -438,8 +438,10 @@ input:checked + .slider:before {
 /* offcanvas  */
 
 .offcanvas-header button {
-    background: none;
-    border: none;
+    /* background: none; */
+    background-color: var(--btnColor);
+    color: var(--lightColor);
+    /* border: none; */
     position: absolute;
     right: 20px;
 }

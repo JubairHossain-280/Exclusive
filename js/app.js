@@ -123,8 +123,7 @@ function toggleTheme() {
     logIn.classList.toggle('dark-mode2');
     const googleIcon = document.querySelector('.google-btn');
     googleIcon.classList.toggle('dark-mode2');
-    const closeBtn = document.querySelector('.offcanvas-header i');
-    closeBtn.classList.toggle('dark-mode2');
+
 }
 
 //* Toggle Theme
