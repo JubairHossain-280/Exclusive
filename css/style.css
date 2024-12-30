@@ -2796,5 +2796,26 @@ iframe {
         height:150px;
     }
 
+    .product-details {
+        padding-left: 10px;
+    }
+    
+    .product-name {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    
+    .discount-price {
+        font-size: 14px;
+    }
+    .original-price {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .rating i {
+        font-size: 14px;
+    }
+
 
 }
