@@ -2778,11 +2778,22 @@ iframe {
     
     }
 
+    .product-slider .card {
+        width: 300px;
+        height: 280px;
+    
+    }
+
     .product-slider .card img{
-        width: 150px;
-        height: 180px;
+        width: 130px;
+        height: 150px;
         object-fit: contain;
 
+    }
+
+    .product-slider .card:hover .hover-effect {
+        width:100%;
+        height:150px;
     }
 
 
