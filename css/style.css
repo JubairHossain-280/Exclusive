@@ -1175,7 +1175,7 @@ ul#down-timer {
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: 50% 50%;
     gap: 30px;
-    /* height: 70vh; */
+    /* height: 50vh; */
 
 }
 .grid-container .play-station-img , .women-collection-img , .speaker-img , .perfume-img{
@@ -2238,17 +2238,17 @@ iframe {
     /* New Arrival section */
     
     .grid-container .play-station img{
-        padding: 0px;
+        /* padding: 0px; */
         
     }
     
     .grid-container .speakers img{
-        padding: 0px 20px;
+        padding: 0px 15px;
     
         
     }
     .grid-container .perfume img {
-        padding: 0px 20px;
+        padding: 0px 15px;
     }
     
     .grid-container { 
@@ -2587,7 +2587,90 @@ iframe {
 
 @media only screen and  (max-width:992px) {
 
+    /* New Arrival Section */
+    
+    .play-station h2 {
+        bottom: 55px;
+        left: 5px;
+        font-size: 16px;
+    
+    }
+    .play-station p {
+        bottom: 15px;
+        left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    
+    }
+    .play-station a {
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px;
+        
+    }
+    
+    .woman-collection h2 {
+        bottom: 55px;
+        left: 5px;
+        font-size: 16px;
+    
+    }
+    .woman-collection p {
+        bottom: 15px;
+        left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    
+    }
+    .woman-collection a {
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px;
+        
+    }
+    
+    .speakers h2 {
+        bottom: 50px;
+        left: 5px;
+        font-size: 16px;
+        
+    }
+    .speakers p {
+        bottom: 15px;
+        left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+        
+    }
+    .speakers a {
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px;
+        
+    }
+    
+    
+    .perfume h2 {
+        bottom: 50px;
+        left: 5px;
+        font-size: 16px;
+        
+    }
+    .perfume p {
+        bottom: 15px;
+        left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    
+    }
+    .perfume a {
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px;
+        
+    }
 
+    /* New Arrival Section */
 
     
 }
@@ -2618,91 +2701,6 @@ iframe {
             right: 0;
         
         }
-
-            /* New Arrival Section */
-    
-    .play-station h2 {
-        bottom: 55px;
-        left: 5px;
-        font-size: 10px;
-    
-    }
-    .play-station p {
-        bottom: 15px;
-        left: 5px;
-        font-size: 8px;
-        line-height: 12px;
-    
-    }
-    .play-station a {
-        bottom: 10px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-    
-    .woman-collection h2 {
-        bottom: 40px;
-        left: 5px;
-        font-size: 10px;
-    
-    }
-    .woman-collection p {
-        bottom: 5px;
-        left: 5px;
-        font-size: 8px;
-        line-height: 12px;
-    
-    }
-    .woman-collection a {
-        bottom: 5px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-    
-    .speakers h2 {
-        bottom: 40px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-    .speakers p {
-        bottom: 5px;
-        left: 5px;
-        font-size: 8px;
-        line-height: 12px;
-        
-    }
-    .speakers a {
-        bottom: 5px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-    
-    
-    .perfume h2 {
-        bottom: 40px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-    .perfume p {
-        bottom: 5px;
-        left: 5px;
-        font-size: 8px;
-        line-height: 12px;
-    
-    }
-    .perfume a {
-        bottom: 5px;
-        left: 5px;
-        font-size: 10px;
-        
-    }
-
-    /* New Arrival Section */
 
 
 }
@@ -2811,6 +2809,11 @@ iframe {
             font-size: 20px;
         }
 
+        .grid-container {
+            height: 50vh;
+        
+        }
+
 
 }
 
@@ -2842,8 +2845,6 @@ iframe {
         padding: 10px 20px;
     
     }
-
-    
 
 
 }
