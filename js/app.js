@@ -328,7 +328,7 @@ new Swiper('.category-wrapper', {
         
 new Swiper('.just-for-you-wrapper', {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 10,
   
     // Pagination
     pagination: {
@@ -345,16 +345,16 @@ new Swiper('.just-for-you-wrapper', {
     // Responsive Breakpoints
     breakpoints: {
         0: {
-            slidesPerView: 1
-        },
-        576: {
             slidesPerView: 2
         },
-        768: {
+        576: {
             slidesPerView: 3
         },
-        1024: {
+        768: {
             slidesPerView: 4
+        },
+        1024: {
+            slidesPerView: 5
         },
     }
   });
