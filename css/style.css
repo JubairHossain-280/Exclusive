@@ -2797,7 +2797,7 @@ iframe {
     }
 
     .product-details {
-        padding-left: 10px;
+        padding-left: 5px;
     }
     
     .product-name {
@@ -2815,6 +2815,29 @@ iframe {
 
     .rating i {
         font-size: 14px;
+    }
+
+    .off {
+        top: 5px;
+        left: 5px;
+        font-size: 10px;
+        padding: 5px 8px;
+        border-radius: 3px;
+    
+    
+    }
+    
+    .favourite {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+    }
+    .visibility {
+        position: absolute;
+        top: 40px;
+        right: 5px;
+        font-size: 20px;
     }
 
 
