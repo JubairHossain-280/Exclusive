@@ -543,6 +543,11 @@ input:checked + .slider:before {
     background-color:#34495e;
     
 }
+
+.collection-name {
+    border-radius: 4px;
+    padding-left: 10px;
+}
 .collection-link {
     width:200px;
     display:block;
@@ -603,7 +608,7 @@ input:checked + .slider:before {
     margin:0;
     position:absolute;
     top:0;
-    left: 205px;
+    left: 210px;
 }
 
 #hero-section .collection .dropdown i {
