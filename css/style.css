@@ -445,7 +445,7 @@ input:checked + .slider:before {
     position: absolute;
     right: 20px;
 }
-.offcanvas-header i {
+.-imgcanvas-header i {
     font-size: 24px;
 }
 
