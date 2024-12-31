@@ -162,6 +162,23 @@ function passToggle() {
 
 //todo Show Password 
 
+//* See More Button
+
+const expandMoreProducts = () => {
+    const moreProducts = document.querySelector('.expand-more-products');
+    moreProducts.classList.toggle('toggle-expand');
+    const expandMoreBtn = document.querySelector('#see-more-btn');
+    if(expandMoreBtn.innerHTML === 'See More') {
+        expandMoreBtn.innerHTML = 'See Less';
+    }
+    else {
+        expandMoreBtn.innerHTML = 'See More';
+    }
+
+};
+
+//* See More Button
+
 
 //? to update the quantity
 
@@ -401,14 +418,14 @@ new Swiper('.employee-wrapper', {
 $(document).ready(function(){
     // Countdown timer
     $('#countdown-timer').countdown({
-        date: '12/31/2024 23:59:59'
+        date: '12/31/2024 17:59:59'
     }, function () {
         alert('Happy New Year!');
     });
     // Countdown timer
     // down timer
     $('#down-timer').countdown({
-        date: '12/31/2024 23:59:59'
+        date: '12/31/2024 17:59:59'
     }, function () {
         alert('Happy New Year!');
     });

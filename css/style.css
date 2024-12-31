@@ -1003,6 +1003,10 @@ ul#countdown-timer {
     padding: 10px 35px;
 }
 
+.all-products:hover {
+    background-color: #a12727;
+}
+
 
 
 
@@ -1174,6 +1178,15 @@ ul#down-timer {
 
 .slider-gap {
     margin-bottom: 50px;
+}
+
+.expand-more-products {
+    display: none;
+
+}
+
+.toggle-expand {
+    display: block;
 }
 
 /* explore-section */
@@ -1893,7 +1906,7 @@ form .password-section i{
 .employee-wrapper img {
     display: block;
     margin: auto;
-    width:300px;
+    width:250px;
     height: 300px;
     object-fit: cover;
 }
