@@ -1,3 +1,4 @@
+
 //* Translate whole page
 function translatePage() {
     var lang = document.getElementById("language-select").value;
@@ -14,6 +15,7 @@ function translatePage() {
 document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
     icon.classList.add('notranslate')
 });
+
 
 
 //todo Splash Screen
@@ -411,6 +413,7 @@ new Swiper('.employee-wrapper', {
 });
 
 // Employee Slider 
+
 
 
 //todo Coundown 

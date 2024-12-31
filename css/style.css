@@ -81,10 +81,10 @@ a {
 
 .fadein {
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+    animation: splashAnimation 1s ease-in forwards;
 }
 
-@keyframes fadeIn {
+@keyframes splashAnimation {
     to {
         opacity: 1;
     }
@@ -1428,6 +1428,10 @@ ul#down-timer {
 
 /* signup-section */
 
+.signup-section {
+    position: relative;
+}
+
 .signup-section img {
     width:100%;
     height: auto;
@@ -1533,11 +1537,140 @@ form .password-section i{
     text-align: center;
     
 }
-.signup-section .signup-box .signup-link a{
+.signup-section .signup-box .signup-link button{
+    border: none;
+    background: none;
     margin-left:10px;
     text-decoration: underline;
     
 }
+
+/* Login Modal */
+
+ .my-modal {
+    display: none;
+    width: 400px;
+    height: 350px;
+    background-color: #6F1E51;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 14px;
+    transition: transform 0.4s ease;
+    z-index: 9999;
+    
+}
+
+.slide-down {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        top: 30%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+        }
+}
+
+
+.slide-up {
+    animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeOut {
+    from {
+        top: 50%;
+        opacity: 1;
+    }
+    to {
+        top: 30%;
+        opacity: 0;
+        }
+}
+
+ .modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+ .modal-content h2 {
+    color: white;
+    text-align: center;
+}
+ .modal-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+ .modal-content form input {
+    color: white;
+    background-color: #B33771;
+    border: none;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+ .modal-content form input::placeholder {
+    color: white;
+
+}
+
+ .modal-content form input:focus {
+    outline: none;
+    box-shadow: 1px 1px 20px cyan;
+}
+
+ .close-modal {
+    color: rgba(255, 255, 255, 0.567);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    transition: color 0.2s ease;
+}
+
+ .close-modal:focus, .close-modal:hover {
+    color: white;
+    
+}
+
+ .create-btn {
+    margin-top: 20px;
+    width: 80%;
+}
+
+ .create-btn button{
+    background-color: #006266;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+
+}
+ .create-btn button:hover {
+    background-color: #006366c0;
+
+}
+
+/* Login Modal */
 
 /* signup-section */
 
