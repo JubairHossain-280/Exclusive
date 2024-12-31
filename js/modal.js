@@ -10,13 +10,13 @@ const submitBtn = document.querySelector('.create-btn button');
 openModal.addEventListener('click', () => {
     modal.style.display = 'block';
     modal.classList.add('slide-down');
-    body.style.backgroundColor = 'rgba(0, 0, 0, 0.582)';
+    // body.style.backgroundColor = 'rgba(0, 0, 0, 0.582)';
 });
 
 closeModal.addEventListener('click', () => {
     modal.classList.remove('slide-down');
     modal.classList.add('slide-up');
-    body.style.backgroundColor = 'white';
+    // body.style.backgroundColor = 'white';
     modal.addEventListener('animationend', () => {
         modal.style.display = 'none';
         modal.classList.remove('slide-up');
@@ -24,6 +24,6 @@ closeModal.addEventListener('click', () => {
 
 });
 
-submitBtn.onclick = alert('Your account has been created successfully!');
+// submitBtn.onclick = alert('Your account has been created successfully!');
 
 //? Login Modal

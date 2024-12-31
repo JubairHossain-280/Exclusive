@@ -121,7 +121,7 @@ function toggleTheme() {
     cardBorders.forEach(cardBorder => cardBorder.classList.toggle('light-border'));
     const socialLinks = document.querySelectorAll('.social-links i');
     socialLinks.forEach(socialLink => socialLink.classList.toggle('dark-mode2'));
-    const logIn = document.querySelector('.signup-link a');
+    const logIn = document.querySelector('.signup-link button');
     logIn.classList.toggle('dark-mode2');
     const googleIcon = document.querySelector('.google-btn');
     googleIcon.classList.toggle('dark-mode2');
