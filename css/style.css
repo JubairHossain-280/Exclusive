@@ -1025,7 +1025,24 @@ ul#countdown-timer {
 
 /* Our Brand Section */
 
+.marquee {
+    width: 100%;
+    overflow: hidden;
+  }
 
+.marquee img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center; 
+    aspect-ratio: 1/1;
+    margin-right: 50px;
+    filter: grayscale(100%);
+}
+
+.marquee img:hover {
+    filter: grayscale(0%);
+}
 
 /* Our Brand Section */
 
