@@ -459,7 +459,7 @@ input:checked + .slider:before {
     position: absolute;
     right: 20px;
 }
-.-imgcanvas-header i {
+.offcanvas-header i {
     font-size: 24px;
 }
 
@@ -783,7 +783,7 @@ input:checked + .slider:before {
 
 /* For all section header */
 .header{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 20px;
     display:flex;
     align-items: center;
@@ -1021,11 +1021,14 @@ ul#countdown-timer {
     background-color: #a12727;
 }
 
-
-
-
-
 /* product slider  */
+
+/* Our Brand Section */
+
+
+
+/* Our Brand Section */
+
 
 /* category-section */
 
@@ -1205,13 +1208,14 @@ ul#down-timer {
 
 /* explore-section */
 
-/* arrival-section */
+/* new arrival-section */
 
 .grid-container {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: 50% 50%;
     gap: 30px;
+    margin-bottom: 50px;
     /* height: 50vh; */
 
 }
@@ -1397,7 +1401,7 @@ ul#down-timer {
 }
 
 
-/* arrival-section */
+/* new arrival-section */
 
 /* service-section */
 
@@ -1616,8 +1620,9 @@ form .password-section i{
     position: relative;
 }
  .modal-content h2 {
-    color: white;
+    color: #f54c9b;
     text-align: center;
+    margin-bottom: 20px;
 }
  .modal-content form {
     display: flex;
@@ -1663,23 +1668,23 @@ form .password-section i{
     
 }
 
- .create-btn {
+ .login-btn {
     margin-top: 20px;
     width: 80%;
 }
 
- .create-btn button{
+ .login-btn button{
     background-color: #006266;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 15px 20px;
+    padding: 10px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
 
 }
- .create-btn button:hover {
+ .login-btn button:hover {
     background-color: #006366c0;
 
 }
@@ -3011,6 +3016,12 @@ iframe {
         .grid-container {
             height: 50vh;
         
+        }
+
+        .my-modal {
+            width: 350px;
+            height: 350px;
+            
         }
 
 

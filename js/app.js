@@ -24,7 +24,7 @@ const splash = document.querySelector('.splash');
 document.addEventListener('DOMContentLoaded',(e)=>{
     setTimeout(()=>{
         splash.classList.add('display-none');
-    }, 1000);
+    }, 1200);
 })
 
 //todo Splash Screen
@@ -266,6 +266,7 @@ const swiper = new Swiper(".hero-slider", {
   });
 
 //hero slider
+
 
 // Product Slider
 new Swiper('.card-wrapper', {
