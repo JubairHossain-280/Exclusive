@@ -421,14 +421,14 @@ new Swiper('.employee-wrapper', {
 $(document).ready(function(){
     // Countdown timer
     $('#countdown-timer').countdown({
-        date: '12/31/2024 17:59:59'
+        date: '01/15/2025 23:59:59'
     }, function () {
         alert('Happy New Year!');
     });
     // Countdown timer
     // down timer
     $('#down-timer').countdown({
-        date: '12/31/2024 17:59:59'
+        date: '01/15/2025 23:59:59'
     }, function () {
         alert('Happy New Year!');
     });
