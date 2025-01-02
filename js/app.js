@@ -17,7 +17,6 @@ document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
 });
 
 
-
 //todo Splash Screen
 
 const splash = document.querySelector('.splash');
@@ -28,7 +27,6 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 })
 
 //todo Splash Screen
-
 
 
 //* Sticky navbar
@@ -161,7 +159,6 @@ function passToggle() {
     }
 }
 
-
 //todo Show Password 
 
 //* See More Button
@@ -238,10 +235,9 @@ function decreaseQuantity2() {
 
 };
 
-
-
-
 //? to update the quantity
+
+//todo Swiper.js Code
 
 //hero slider
 
@@ -415,40 +411,45 @@ new Swiper('.employee-wrapper', {
 
 // Employee Slider 
 
+//todo Swiper.js Code
 
+//? jQuery code
 
-//todo Coundown 
 
 $(document).ready(function(){
-    // Countdown timer
+    //* Countdown timer
     $('#countdown-timer').countdown({
         date: '01/15/2025 23:59:59'
     }, function () {
         alert('Happy New Year!');
     });
-    // Countdown timer
-    // down timer
+    //* Countdown timer
+
+    //? down timer
     $('#down-timer').countdown({
         date: '01/15/2025 23:59:59'
     }, function () {
         alert('Happy New Year!');
     });
-    // down timer
+    //? down timer
 
-    //? cookies
-    
-    // const body = document.body;
-    // const myCookies = document.querySelector('.cookies');
-    // $(body).DomContentLoaded(function(){
-    //     $(myCookies).slideUp(slow);
-    // });
-    
-    //? cookies
+    //todo Marquee Animation
 
-        
+    $('.marquee').marquee({
+        duration: 30000,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
     });
 
-//todo Coundown 
+    //todo Marquee Animation
+ 
+    });
 
-
-
+    
+//? jQuery code
+    
+    

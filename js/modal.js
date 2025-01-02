@@ -1,16 +1,3 @@
-//todo Marquee Animation
-
-$('.marquee').marquee({
-	duration: 30000,
-	gap: 0,
-	delayBeforeStart: 0,
-	direction: 'left',
-	duplicated: true,
-    pauseOnHover: true,
-    startVisible: true,
-});
-
-
 //? Login Modal
 
 const openModal = document.querySelector('.open-modal');
