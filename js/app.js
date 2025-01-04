@@ -183,7 +183,7 @@ const expandMoreProducts = () => {
 
 const minusBtn = document.querySelector('.minusBtn');
 const price = document.querySelector('.price');
-let dollar = 650;
+let dollar = 12200;
 let quantity1 = document.querySelector('#quantity1');
 let number = 1;
 let newPrice;
@@ -193,7 +193,7 @@ function increaseQuantity() {
     number++;
     quantity1.textContent = number;
     newPrice = dollar*number;
-    price.textContent = '$'+newPrice;
+    price.textContent = newPrice+' ৳';
     
     
 };
@@ -205,12 +205,12 @@ function decreaseQuantity() {
     number--;
     quantity1.textContent = number;
     lessPrice = dollar*number;
-    price.textContent = '$'+lessPrice;
+    price.textContent = lessPrice+' ৳';
 };
 
 
 const price2 = document.querySelector('.price2');
-let dollar2 = 550;
+let dollar2 = 73800;
 let quantity2 = document.querySelector('#quantity2');
 let number2 = 1;
 let newPrice2;
@@ -220,7 +220,7 @@ function increaseQuantity2() {
     number2++;
     quantity2.textContent = number2;
     newPrice2 = dollar2*number2;
-    price2.textContent = "$"+newPrice2;
+    price2.textContent = newPrice2+" ৳";
     
 };
 function decreaseQuantity2() {
@@ -231,7 +231,7 @@ function decreaseQuantity2() {
     number2--;
     quantity2.textContent = number2;
     lessPrice2 = dollar2*number2;
-    price2.textContent = "$"+lessPrice2;
+    price2.textContent = lessPrice2+" ৳";
 
 };
 
